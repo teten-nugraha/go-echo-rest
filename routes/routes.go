@@ -13,5 +13,6 @@ func Init() *echo.Echo {
 		return e.String(http.StatusOK, "Hello this is from echo")
 	})
 
+
 	return e
 }

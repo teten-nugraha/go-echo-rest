@@ -1,6 +1,8 @@
 package main
 
-import "github.com/teten-nugraha/simple-go-rest/routes"
+import (
+	"github.com/teten-nugraha/simple-go-rest/routes"
+)
 
 func main()  {
 
