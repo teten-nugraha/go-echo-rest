@@ -1,10 +1,13 @@
 package main
 
 import (
+	"github.com/teten-nugraha/simple-go-rest/db"
 	"github.com/teten-nugraha/simple-go-rest/routes"
 )
 
-func main()  {
+func main() {
+
+	db.Init()
 
 	e := routes.Init()
 
