@@ -2,6 +2,7 @@ package routes
 
 import (
 	"github.com/labstack/echo"
+	"github.com/teten-nugraha/simple-go-rest/controllers"
 	"net/http"
 )
 
@@ -13,6 +14,7 @@ func Init() *echo.Echo {
 		return e.String(http.StatusOK, "Hello this is from echo")
 	})
 
+	e.GET("/pegawai", controllers.FetchAllPegawai)
 
 	return e
 }
