@@ -1,4 +1,4 @@
-package middlewareConf
+package middlewares
 
 import (
 	"github.com/labstack/echo/middleware"
