@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "7d726dbf-ca16-44cc-8a2a-4dad113038ff",
+		"name": "Simple Rest Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Pegawai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDU5NTIyNDUsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6InVuYSJ9.LwbJ_uPQM2Tf_-j-1ZxBA2MdIt2a-gnfiCLDe823-qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1234/pegawai",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Pegawai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDU5NTIyNDUsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6InVuYSJ9.LwbJ_uPQM2Tf_-j-1ZxBA2MdIt2a-gnfiCLDe823-qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "useraname",
+							"value": "teten",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "telepone",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1234/pegawai",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Pegawai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDU5NTIyNDUsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6InVuYSJ9.LwbJ_uPQM2Tf_-j-1ZxBA2MdIt2a-gnfiCLDe823-qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "telepone",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1234/pegawai",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pegawai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDU5NTIyNDUsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6InVuYSJ9.LwbJ_uPQM2Tf_-j-1ZxBA2MdIt2a-gnfiCLDe823-qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1234/pegawai",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "una",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "nganga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1234/login",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
