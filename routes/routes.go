@@ -3,6 +3,7 @@ package routes
 import (
 	"github.com/labstack/echo"
 	"github.com/teten-nugraha/simple-go-rest/controllers"
+	"github.com/teten-nugraha/simple-go-rest/middleware"
 	"net/http"
 )
 
@@ -14,13 +15,15 @@ func Init() *echo.Echo {
 		return e.String(http.StatusOK, "Hello this is from echo")
 	})
 
-	e.GET("/pegawai", controllers.FetchAllPegawai)
+	e.GET("/pegawai", controllers.FetchAllPegawai, middleware.IsAuthenticated)
 	e.POST("/pegawai", controllers.StorePegawai)
 	e.PUT("/pegawai", controllers.UpdatePegawai)
 	e.DELETE("/pegawai", controllers.DeletePegawai)
 
 	e.GET("/generate-hash/:password", controllers.GenerateHashPassword)
 	e.GET("/login", controllers.CheckLogin)
+
+
 
 	return e
 }
